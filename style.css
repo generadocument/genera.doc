@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #004aad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    max-width: 600px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    margin: 10px 0;
+}
+
+.profile p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.links {
+    text-align: center;
+}
+
+.main-link {
+    width: 80%;
+    background-color: #004aad; /* Color de fondo del botón principal */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.main-link:hover {
+    background-color: #003366;
+}
+
+.submenu {
+    display: none;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los subbotones se ajusten a la pantalla */
+}
+
+.submenu::-webkit-scrollbar {
+    height: 6px;
+}
+
+.submenu::-webkit-scrollbar-thumb {
+    background-color: #004aad;
+    border-radius: 10px;
+}
+
+.sub-link {
+    display: inline-block;
+    width: 140px;
+    height: 180px;
+    background-color: #f4f4f4;
+    color: #007bff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+    overflow: hidden; /* Asegura que el contenido no se salga */
+}
+
+.sub-link .sub-title {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #333;
+    text-align: center; /* Centra el texto */
+    font-weight: bold;
+    display: block;
+    width: 100%; /* Asegura que el texto ocupe el ancho completo del contenedor */
+    word-wrap: break-word; /* Permite que el texto se envuelva si es largo */
+    white-space: normal; /* Permite que el texto se divida en varias líneas */
+    
+}
+
+.sub-link .sub-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Imagen redonda como perfil de WhatsApp */
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff; /* Marco más suave alrededor de la foto */
+}
+
+.sub-link:hover {
+    background-color: #e0e0e0;
+    color: #0056b3;
+}
